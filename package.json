@@ -1,0 +1,30 @@
+{
+  "name": "billing-service",
+  "version": "1.4.2",
+  "description": "Invoice generation and payment tracking API for Northwind Billing",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "backup": "node scripts/backup-db.js",
+    "lint": "eslint src"
+  },
+  "author": "Northwind Billing Ops",
+  "license": "UNLICENSED",
+  "private": true,
+  "engines": { "node": ">=18" },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.540.0",
+    "@aws-sdk/client-ses": "^3.540.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "ioredis": "^5.3.2",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.11.3",
+    "pino": "^8.19.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "nodemon": "^3.1.0"
+  }
+}
